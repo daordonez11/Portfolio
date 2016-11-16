@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.sinalefa.portfolio.MainActivity"
+    android:background="@color/background"
+    tools:showIn="@layout/activity_main">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+       <TextView
+           android:text="@string/title"
+           android:textSize="18dp"
+           android:gravity="center"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="10dp"
+           android:id="@+id/textView" />
+
+       <Button
+           android:text="Popular Movies"
+           android:background="@color/colorAccent"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="5dp"
+           android:id="@+id/btnMovies" />
+       <Button
+           android:text="Stock Hawk"
+           android:background="@color/colorAccent"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="5dp"
+           android:id="@+id/btnStock" />
+       <Button
+           android:text="Build it bigger"
+           android:background="@color/colorAccent"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="5dp"
+           android:id="@+id/btnBigger" />
+       <Button
+           android:text="Make Your App Material"
+           android:background="@color/colorAccent"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="5dp"
+           android:id="@+id/btnMaterial" />
+       <Button
+           android:text="Go Ubiquitous"
+           android:background="@color/colorAccent"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="5dp"
+           android:id="@+id/btnUbi" />
+       <Button
+           android:text="Capstone: My own app"
+           android:background="#E65100"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="5dp"
+           android:id="@+id/btnOwn" />
+   </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
